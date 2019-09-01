@@ -4,14 +4,19 @@
   &__left {
     max-width: 480px;
     width: 100%;
-  }
-
-  &__right {
-    margin-right: 117px;
+    margin-right: 30px;
   }
 
   &__title {
     margin-bottom: 27px;
+  }
+
+  &__text {
+    margin-bottom: 34px;
+  }
+
+  &__btn {
+    margin-bottom: 106px;
   }
 
 }

@@ -527,11 +527,36 @@ input[type=number]::-webkit-inner-spin-button {
   margin-left: 100px; }
   .preview__left {
     max-width: 480px;
-    width: 100%; }
-  .preview__right {
-    margin-right: 117px; }
+    width: 100%;
+    margin-right: 30px; }
   .preview__title {
     margin-bottom: 27px; }
+  .preview__text {
+    margin-bottom: 34px; }
+  .preview__btn {
+    margin-bottom: 106px; }
+
+.social__item {
+  margin-right: 10px; }
+
+.social__item-hidden {
+  visibility: hidden;
+  opacity: 0; }
+
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+  .social__link--ph {
+    background-image: url("/img/icon__social--ph.png"); }
+  .social__link--insta {
+    background-image: url("/img/icon__social--insta.png"); }
+  .social__link--tw {
+    background-image: url("/img/icon__social--tw.png"); }
+  .social__link--fb {
+    background-image: url("/img/icon__social--fb.png"); }
 
 .title {
   font-family: "Montserrat", sans-serif;
