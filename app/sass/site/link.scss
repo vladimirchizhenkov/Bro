@@ -1,0 +1,11 @@
+.link {
+  color: $colorTextMain;
+  font-size: $fontSizeXS;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &--tel {
+    font-size: $fontSizeS;
+    font-weight: 800;
+  }
+}

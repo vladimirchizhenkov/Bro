@@ -1,0 +1,31 @@
+/*
+
+Элементы отделяю от блока двойным подчеркиванием "__" block__element;
+Модификатор отделяю от блока/элемента двойным тире "--" block--modify, element--modify;
+
+Для сохранения независимости(переиспользования) блоков, использую модификаторы для позиционирования;
+Нэйминг m - margin, p - padding; t - top, b - bottom, l - left, r - right. block--mt-12;
+
+*/
+
+@import 'variable'; // <-- Variables: colors, font-sizes, etc...
+
+// Site
+
+@import 'site/normalizer'; // <-- Normalizer Lib || https://necolas.github.io/normalize.css/
+@import 'site/fonts'; // <-- Fonts of project || https://fonts.google.com/
+@import 'site/text';
+
+@import 'site/basic';
+@import 'site/body-wrapper';
+@import 'site/btn';
+@import 'site/content';
+@import 'site/footer';
+@import 'site/header';
+@import 'site/info-company';
+@import 'site/link';
+@import 'site/logo';
+@import 'site/preview';
+@import 'site/social';
+@import 'site/title';
+@import 'site/wrapper';

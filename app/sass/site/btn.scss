@@ -1,0 +1,26 @@
+.btn {
+  display: block;
+  color: $colorTextMain;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: $borderRadius;
+  width: 100%;
+  text-align: center;
+
+  &--orange {
+    font-size: $fontSizeXS;
+    background-color: $colorOrange;
+    max-width: 210px;
+    line-height: 40px;
+  }
+
+  &--blue {
+    font-size: $fontSizeS;
+    color: $colorWhite;
+    background-color: $colorBlue;
+    max-width: 310px;
+    line-height: 50px;
+  }
+
+}

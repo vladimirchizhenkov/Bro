@@ -1,0 +1,15 @@
+.wrapper {
+
+  &--flex {
+    display: flex;
+  }
+
+  &--around {
+    justify-content: space-between;
+  }
+
+  &--align-center {
+    align-items: center;
+  }
+
+}

@@ -1,0 +1,24 @@
+.title {
+  font-family: $fontOffensive;
+  font-size: $fontSizeXL;
+  font-weight: bold;
+  line-height: 44px;
+  letter-spacing: 1px;
+
+  &::before {
+    display: block;
+    content: '';
+    width: 110px;
+    height: 5px;
+    background: $colorBlue;
+    border-radius: $borderRadius;
+    margin-bottom: 33px;
+  }
+
+  &--major {
+    font-size: $fontSizeXXL;
+    line-height: 67px;
+    margin-bottom: 27px;
+  }
+
+}
