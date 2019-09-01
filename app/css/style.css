@@ -461,7 +461,8 @@ input[type=number]::-webkit-inner-spin-button {
     margin-bottom: 34px; }
 
 .advantages {
-  margin-left: 100px; }
+  margin-left: 100px;
+  margin-bottom: 66px; }
   .advantages__title {
     margin-bottom: 16px; }
   .advantages__text {
@@ -553,6 +554,23 @@ input[type=number]::-webkit-inner-spin-button {
           flex-grow: 1;
   margin-bottom: 32px;
   padding-top: 32px; }
+
+.doctor__left {
+  max-width: 538px;
+  margin-right: 61px; }
+
+.doctor__right {
+  max-width: 580px;
+  width: 100%; }
+
+.doctor__title {
+  margin-top: 26px;
+  margin-bottom: 17px; }
+
+.doctor__img {
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15);
+          box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15); }
 
 .header {
   margin-top: 39px; }

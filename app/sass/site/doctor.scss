@@ -1,0 +1,23 @@
+.doctor {
+
+  &__left {
+    max-width: 538px;
+    margin-right: 61px;
+  }
+
+  &__right {
+    max-width: 580px;
+    width: 100%;
+  }
+
+  &__title {
+    margin-top: 26px;
+    margin-bottom: 17px;
+  }
+
+  &__img {
+    width: 100%;
+    box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15);
+  }
+
+}
