@@ -8,4 +8,10 @@
     font-size: $fontSizeS;
     font-weight: 800;
   }
+
+  &--tag {
+    color: $colorBlue;
+    line-height: 18px;
+  }
+
 }

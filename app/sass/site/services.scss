@@ -1,0 +1,41 @@
+.services {
+  margin-left: 100px;
+
+  &__left {
+    margin-right: 50px;
+  }
+
+  &__right {
+    margin-top: 154px;
+  }
+
+  &__title {
+    margin-bottom: 38px;
+  }
+
+  &__box {
+    width: 450px;
+    min-height: 470px;
+    border-radius: $borderRadius;
+    background-color: $colorWhite;
+    margin-bottom: 50px;
+  }
+
+  &__wrapper {
+    padding: 28px 55px 33px 40px;
+  }
+
+  &__caption {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    margin-bottom: 18px;
+  }
+
+  &__item {
+    margin-right: 20px;
+    margin-bottom: 7px;
+  }
+
+}

@@ -21,4 +21,13 @@
     margin-bottom: 27px;
   }
 
+  &--lower {
+    font-size: $fontSizeL;
+    line-height: 28px;
+    font-weight: bold;
+    &::before {
+      display: none;
+    }
+  }
+
 }

@@ -412,6 +412,9 @@ template {
   line-height: 29px;
   font-weight: normal;
   margin: 0; }
+  .text--size-s {
+    font-size: 16px;
+    line-height: 24px; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -444,19 +447,18 @@ input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
-.about-therapy__rigth {
-  max-width: 580px;
-  width: 100%; }
-
-.about-therapy__left {
-  margin-right: 60px; }
-
-.about-therapy__title {
-  margin-top: 80px;
-  margin-bottom: 19px; }
-
-.about-therapy__text {
-  margin-bottom: 34px; }
+.about-therapy {
+  margin-bottom: 100px; }
+  .about-therapy__rigth {
+    max-width: 580px;
+    width: 100%; }
+  .about-therapy__left {
+    margin-right: 60px; }
+  .about-therapy__title {
+    margin-top: 80px;
+    margin-bottom: 19px; }
+  .about-therapy__text {
+    margin-bottom: 34px; }
 
 .body-wrapper {
   display: -webkit-box;
@@ -540,6 +542,9 @@ input[type=number]::-webkit-inner-spin-button {
   .link--tel {
     font-size: 16px;
     font-weight: 800; }
+  .link--tag {
+    color: #056CDE;
+    line-height: 18px; }
 
 .preview {
   margin-left: 100px;
@@ -554,6 +559,31 @@ input[type=number]::-webkit-inner-spin-button {
     margin-bottom: 34px; }
   .preview__btn {
     margin-bottom: 106px; }
+
+.services {
+  margin-left: 100px; }
+  .services__left {
+    margin-right: 50px; }
+  .services__right {
+    margin-top: 154px; }
+  .services__title {
+    margin-bottom: 38px; }
+  .services__box {
+    width: 450px;
+    min-height: 470px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    background-color: #fff;
+    margin-bottom: 50px; }
+  .services__wrapper {
+    padding: 28px 55px 33px 40px; }
+  .services__caption {
+    margin-bottom: 8px; }
+  .services__text {
+    margin-bottom: 18px; }
+  .services__item {
+    margin-right: 20px;
+    margin-bottom: 7px; }
 
 .social__item {
   margin-right: 10px; }
@@ -596,12 +626,23 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 58px;
     line-height: 67px;
     margin-bottom: 27px; }
+  .title--lower {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold; }
+    .title--lower::before {
+      display: none; }
 
 .wrapper--flex {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+
+.wrapper--wrap {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .wrapper--around {
   -webkit-box-pack: justify;
