@@ -7,6 +7,15 @@
   &--tel {
     font-size: $fontSizeS;
     font-weight: 800;
+    &-upper {
+      font-size: $fontSizeL;
+      line-height: 29px;
+      letter-spacing: 1px;
+    }
+    &-lower {
+      font-size: 14px;
+      line-height: 23px;
+    }
   }
 
   &--tag {

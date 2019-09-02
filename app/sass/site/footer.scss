@@ -1,2 +1,39 @@
 .footer {
+  padding-bottom: 60px;
+
+  &__top {
+    margin-bottom: 34px;
+  }
+
+  &__social {
+    margin-left: auto;
+    margin-right: 21px;
+  }
+
+  &__left {
+    margin-right: 87px;
+  }
+
+  &__right {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  &__tel {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  &__img-rating {
+    margin-left: 10px;
+  }
+
 }

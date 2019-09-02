@@ -1,0 +1,43 @@
+.contact {
+  position: relative;
+  background-color: $colorOrange;
+  border-radius: $borderRadius;
+  margin-bottom: 67px;
+    &::before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 200px;
+      height: 110px;
+      top: -31px;
+      left: 35px;
+      background-image: url('/img/icon__contact--mail.png');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+  &__wrapper {
+    padding: 15px 300px 73px 300px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &__text {
+    margin-bottom: 23px;
+  }
+
+  &__btn {
+    margin-top: 32px;
+  }
+
+  &__map {
+    min-height: 400px;
+  }
+
+}

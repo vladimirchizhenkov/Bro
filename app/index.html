@@ -7,6 +7,209 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>DirectLine Test</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('ya-map'), {
+                center: {lat: 53.558886, lng: 49.215480},
+                zoom: 15,
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "saturation": "16"
+                            },
+                            {
+                                "color": "#19222e"
+                            },
+                            {
+                                "lightness": "35"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            },
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 20
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#fefefe"
+                            },
+                            {
+                                "lightness": 17
+                            },
+                            {
+                                "weight": 1.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ddedff"
+                            },
+                            {
+                                "lightness": "-2"
+                            },
+                            {
+                                "saturation": "-5"
+                            },
+                            {
+                                "gamma": "1.00"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ddedff"
+                            },
+                            {
+                                "lightness": "-6"
+                            },
+                            {
+                                "saturation": "8"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ddedff"
+                            },
+                            {
+                                "lightness": "-5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#ddedff"
+                            },
+                            {
+                                "lightness": "-14"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": 29
+                            },
+                            {
+                                "weight": 0.2
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ddedff"
+                            },
+                            {
+                                "lightness": "35"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ddedff"
+                            },
+                            {
+                                "lightness": "-9"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ffffff"
+                            },
+                            {
+                                "lightness": "7"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ddedff"
+                            },
+                            {
+                                "lightness": "-8"
+                            }
+                        ]
+                    }
+                ]
+
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArJkKNmyWBxJpseBDeO1x9tGrt2Sun6H8&callback=initMap"
+            async defer>
+
+    </script>
 </head>
 <body>
 <div class="body-wrapper">
@@ -98,8 +301,10 @@
                                     <li class="services__item"><a href="#"
                                                                   class="services__link link link--tag">Flexion-distraction</a>
                                     </li>
-                                    <li class="services__item"><a href="#" class="services__link link link--tag">Thompson</a></li>
-                                    <li class="services__item"><a href="#" class="services__link link link--tag">View All Services</a>
+                                    <li class="services__item"><a href="#" class="services__link link link--tag">Thompson</a>
+                                    </li>
+                                    <li class="services__item"><a href="#" class="services__link link link--tag">View
+                                        All Services</a>
                                     </li>
                                 </ul>
                             </div>
@@ -108,14 +313,20 @@
                             <img src="img/img__services--ph-2.png" alt="service ph1" class="services__img">
                             <div class="services__wrapper">
                                 <div class="services__caption title title--lower">Massage</div>
-                                <p class="services__text text text--size-s">Healthy Spine Family Chiropractic, serves the Thornton and surrounding communities and it provides a natural, conservative approach to your health care.</p>
+                                <p class="services__text text text--size-s">Healthy Spine Family Chiropractic, serves
+                                    the Thornton and surrounding communities and it provides a natural, conservative
+                                    approach to your health care.</p>
                                 <ul class="services__list wrapper wrapper--flex wrapper--wrap">
-                                    <li class="services__item"><a href="#" class="services__link link link--tag">Deep Tissue</a></li>
+                                    <li class="services__item"><a href="#" class="services__link link link--tag">Deep
+                                        Tissue</a></li>
                                     <li class="services__item"><a href="#"
-                                                                  class="services__link link link--tag">Trigger Point</a>
+                                                                  class="services__link link link--tag">Trigger
+                                        Point</a>
                                     </li>
-                                    <li class="services__item"><a href="#" class="services__link link link--tag">Sport Massage</a></li>
-                                    <li class="services__item"><a href="#" class="services__link link link--tag">Myofascial Release</a>
+                                    <li class="services__item"><a href="#" class="services__link link link--tag">Sport
+                                        Massage</a></li>
+                                    <li class="services__item"><a href="#" class="services__link link link--tag">Myofascial
+                                        Release</a>
                                     </li>
                                 </ul>
                             </div>
@@ -126,11 +337,15 @@
                             <img src="img/img__services--ph-3.png" alt="service ph1" class="services__img">
                             <div class="services__wrapper">
                                 <div class="services__caption title title--lower">Acupuncture</div>
-                                <p class="services__text text text--size-s">Healthy Spine Family Chiropractic, serves the Thornton and surrounding communities and it provides a natural, conservative approach to your health care.</p>
+                                <p class="services__text text text--size-s">Healthy Spine Family Chiropractic, serves
+                                    the Thornton and surrounding communities and it provides a natural, conservative
+                                    approach to your health care.</p>
                                 <ul class="services__list wrapper wrapper--flex wrapper--wrap">
-                                    <li class="services__item"><a href="#" class="services__link link link--tag">Cupping</a></li>
                                     <li class="services__item"><a href="#"
-                                                                  class="services__link link link--tag">Chinese Herbs</a>
+                                                                  class="services__link link link--tag">Cupping</a></li>
+                                    <li class="services__item"><a href="#"
+                                                                  class="services__link link link--tag">Chinese
+                                        Herbs</a>
                                     </li>
                                 </ul>
                             </div>
@@ -141,23 +356,28 @@
 
             <div class="advantages">
                 <h2 class="advantages__title title">Advantages</h2>
-                <p class="advantages__text text">Healthy Spine Family Chiropractic was created for the necessity of custom made chiropractic treatment for all ages.</p>
+                <p class="advantages__text text">Healthy Spine Family Chiropractic was created for the necessity of
+                    custom made chiropractic treatment for all ages.</p>
                 <div class="advantages__wrapper wrapper--flex wrapper--wrap">
                     <div class="advantages__box advantages__box--like">
-                        <div class="advantages__capture title title--small">Multi Disciplinary Practice</div>
-                        <p class="advantages__description text text--size-s">We offer chiropractic, massage and acupuncture.</p>
+                        <div class="advantages__caption title title--small">Multi Disciplinary Practice</div>
+                        <p class="advantages__description text text--size-s">We offer chiropractic, massage
+                            and acupuncture.</p>
                     </div>
                     <div class="advantages__box advantages__box--spanish-flag">
-                        <div class="advantages__capture title title--small">The Doctor Speaks Spanish</div>
-                        <p class="advantages__description text text--size-s">We strive to provide complete care for our patients. We speak English and Spanish.</p>
+                        <div class="advantages__caption title title--small">The Doctor Speaks Spanish</div>
+                        <p class="advantages__description text text--size-s">We strive to provide complete care for our
+                            patients. We speak English and Spanish.</p>
                     </div>
                     <div class="advantages__box advantages__box--award">
-                        <div class="advantages__capture title title--small">Over 10 Years of Experience</div>
-                        <p class="advantages__description text text--size-s">The Doctor has 10+ years of experience in the chiropractic.</p>
+                        <div class="advantages__caption title title--small">Over 10 Years of Experience</div>
+                        <p class="advantages__description text text--size-s">The Doctor has 10+ years of experience
+                            in the chiropractic.</p>
                     </div>
                     <div class="advantages__box advantages__box--shield">
-                        <div class="advantages__capture title title--small">Insurance</div>
-                        <p class="advantages__description text text--size-s">We accept most insurance and file the claims for you.</p>
+                        <div class="advantages__caption title title--small">Insurance</div>
+                        <p class="advantages__description text text--size-s">We accept most insurance and file
+                            the claims for you.</p>
                     </div>
                 </div>
             </div>
@@ -169,7 +389,12 @@
                     </div>
                     <div class="doctor__right">
                         <h2 class="doctor__title title">Dr. Osvaldo «Ozzie» Gratacos</h2>
-                        <p class="doctor__text text">Dr. Osvaldo “Ozzie” Gratacos is a licensed chiropractor serving the Thornton and surrounding communities. Dr. Gratacos graduated from Palmer College of Chiropractic in Florida. After graduating, Dr. Gratacos went back to his home in Puerto Rico to open a practice for 4 years before practicing in Lakewood, Colorado. He is bilingual (spanish/english). Ozzie is certified in extremity adjustments, treatment in golf related injuries, and Cox technique for herniated disc.</p>
+                        <p class="doctor__text text">Dr. Osvaldo “Ozzie” Gratacos is a licensed chiropractor serving the
+                            Thornton and surrounding communities. Dr. Gratacos graduated from Palmer College of
+                            Chiropractic in Florida. After graduating, Dr. Gratacos went back to his home in Puerto Rico
+                            to open a practice for 4 years before practicing in Lakewood, Colorado. He is bilingual
+                            (spanish/english). Ozzie is certified in extremity adjustments, treatment in golf related
+                            injuries, and Cox technique for herniated disc.</p>
                     </div>
                 </div>
             </div>
@@ -178,20 +403,84 @@
                 <h2 class="testimonials__title title">Testimonials</h2>
                 <div class="testimonials__slider">
                     <div class="testimonials__item">
-                        <img src="img/icon__testimonials--rating.png.png" class="testimonials__rating" />
-                        <p class="testimonials__text text text--size-s">I first visited Dr Ozzie after a sports injury took me out of the game. Dr. Gratacos helped me – not just by relieving my pain, but by showing me how to avoid future injuries. Now I know what not to do so I can keep...</p>
+                        <div class="testimonials__rating rating">
+                            <img src="img/icon__testimonials--rating.png.png" class="rating__img"/>
+                        </div>
+                        <p class="testimonials__text text text--size-s">I first visited Dr Ozzie after a sports injury
+                            took me out of the game. Dr. Gratacos helped me – not just by relieving my pain, but by
+                            showing me how to avoid future injuries. Now I know what not to do so I can keep...</p>
                         <a href="#" class="testimonials__link link link--tag">view more</a>
                         <div class="testimonials__author">Tony D.</div>
                     </div>
                 </div>
             </div>
 
+            <div class="contact">
+                <div class="contact__wrapper">
+                    <h2 class="contact__title title title--major">Contact Us Today</h2>
+                    <p class="contact__text text">We are happy to assist you with any questions you may have regarding
+                        your chiropractic needs or insurance questions. You can make an appointment online or by giving
+                        us a call at</p>
+                    <a href="" class="contact__tel link link--tel link--tel-upper">(303) 457-2040</a>
+                    <a href="" class="contact__btn btn btn--blue">Make an Appointment</a>
+                </div>
+                <div class="contact__map" id="ya-map">
+
+                </div>
+            </div>
+
         </div>
     </div>
 
+    <div class="footer">
+        <div class="container">
+            <div class="footer__top wrapper wrapper--flex wrapper--align-center">
+                <div class="footer__info-company info-company">
+                    <ul class="info-company__list wrapper wrapper--flex">
+                        <li class="info-company__item"><a href="#" class="info-company__link link">our story</a></li>
+                        <li class="info-company__item"><a href="#" class="info-company__link link">services</a></li>
+                        <li class="info-company__item"><a href="#" class="info-company__link link">faq</a></li>
+                        <li class="info-company__item"><a href="#" class="info-company__link link">contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social social">
+                    <ul class="social__list wrapper wrapper--flex">
+                        <li class="social__item"><a href="#" class="social__link social__link--ph"><span
+                                class="social__item-hidden">1</span></a></li>
+                        <li class="social__item"><a href="#" class="social__link social__link--insta"><span
+                                class="social__item-hidden">2</span></a></li>
+                        <li class="social__item"><a href="#" class="social__link social__link--tw"><span
+                                class="social__item-hidden">3</span></a></li>
+                        <li class="social__item"><a href="#" class="social__link social__link--fb"><span
+                                class="social__item-hidden">4</span></a></li>
+                    </ul>
+                </div>
+                <a href="#" class="footer__btn btn btn--orange">Contact Us</a>
+            </div>
 
-    <div class="footer"></div>
-
+            <div class="footer__bottom wrapper wrapper--flex">
+                <div class="footer__left">
+                    <a href="tel:3034572040" class="footer__tel link link--tel link--tel-lower">(303) 457-2040</a>
+                    <p class="footer__text">10313 Washington St., Thornton,</p>
+                    <p class="footer__text">CO 80229</p>
+                </div>
+                <div class="footer__center">
+                    <p class="footer__text">Monday, Wednesday, Thursday — 9:00 AM - 6:00 PM</p>
+                    <p class="footer__text">Friday — 9:00 AM - 1:00 PM</p>
+                    <p class="footer__text">Saturday — 10:00 AM - 1:00 PM</p>
+                </div>
+                <div class="footer__right">
+                    <div class="wrapper wrapper--flex wrapper--align-center wrapper--end">
+                        <p class="footer__text">Company rating:</p><img class="footer__img-rating"
+                                                                        src="img/icon__testimonials--rating.png.png"
+                                                                        alt="rating"/>
+                    </div>
+                    <p class="footer__text">© Copyright — Healthy Spine Family Chiropractic 2019</p>
+                    <p class="footer__text">Web Design — Direct Line Development</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 </body>
