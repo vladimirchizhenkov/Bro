@@ -38,6 +38,8 @@
 
   &__map {
     min-height: 400px;
+    border-bottom-right-radius: $borderRadius;
+    border-bottom-left-radius: $borderRadius;
   }
 
 }
