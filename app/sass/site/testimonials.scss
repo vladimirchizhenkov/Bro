@@ -6,7 +6,7 @@
     margin-bottom: 38px;
   }
 
-  &__slider {
+  &__wrapper {
     position: relative;
     width: 760px;
     margin-left: 300px;
@@ -22,7 +22,6 @@
       top: 0;
       left: -203px;
     }
-
   }
 
   &__item {
@@ -33,6 +32,12 @@
     padding-top: 40px;
     padding-left: 40px;
     padding-right: 40px;
+    &:nth-child(odd) {
+      margin-right: 20px;
+    }
+    &:nth-child(even) {
+      margin-left: 20px;
+    }
   }
 
   &__rating {
@@ -47,6 +52,39 @@
   &__author {
     margin-top: 22px;
     font-weight: bold;
+  }
+
+
+  &__arrow-left, &__arrow-right {
+    cursor: pointer;
+    position: absolute;
+    bottom: -60px;
+    display: block;
+    width: 32px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &__arrow-left {
+    left: -3px;
+    transform: rotateY(-180deg);
+    background-image: url('/img/icon__slider--arrow-right.png');
+  }
+
+  &__arrow-left.slick-disabled {
+    transform: rotateY(0deg);
+    background-image: url('/img/icon__slider--arrow-left.png');
+  }
+
+  &__arrow-right {
+    right: -3px;
+    background-image: url('/img/icon__slider--arrow-right.png');
+  }
+
+  &__arrow-right.slick-disabled {
+    transform: rotateY(-180deg);
+    background-image: url('/img/icon__slider--arrow-left.png');
   }
 
 }

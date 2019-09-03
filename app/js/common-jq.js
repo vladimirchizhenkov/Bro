@@ -1,7 +1,9 @@
 $('.testimonials__slider').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 2,
     slidesToScroll: 2,
     dots: true,
-    arrows: true
+    arrows: true,
+    prevArrow: $('.testimonials__arrow-left'),
+    nextArrow: $('.testimonials__arrow-right')
 });
