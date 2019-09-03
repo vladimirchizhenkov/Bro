@@ -163,7 +163,7 @@
 
 .slick-dots {
   position: absolute;
-  bottom: -25px;
+  bottom: -67px;
   list-style: none;
   display: block;
   text-align: center;
@@ -205,13 +205,15 @@
         font-size: 6px;
         line-height: 20px;
         text-align: center;
-        color: black;
+        color: red;
         opacity: 0.25;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; }
     .slick-dots li.slick-active button:before {
-      color: black;
+      color: red;
       opacity: 0.75; }
+    .slick-dots li.slick-active .testimonials__dots {
+      background-color: #056CDE; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -1013,6 +1015,7 @@ input[type=number]::-webkit-inner-spin-button {
   .testimonials__arrow-left, .testimonials__arrow-right {
     cursor: pointer;
     position: absolute;
+    z-index: 999;
     bottom: -60px;
     display: block;
     width: 32px;
@@ -1035,6 +1038,13 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-transform: rotateY(-180deg);
             transform: rotateY(-180deg);
     background-image: url("/img/icon__slider--arrow-left.png"); }
+  .testimonials__dots {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #D5E9FF;
+    -webkit-border-radius: 100%;
+            border-radius: 100%; }
 
 .wrapper--flex {
   display: -webkit-box;
