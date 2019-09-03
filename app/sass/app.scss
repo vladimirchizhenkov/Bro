@@ -12,8 +12,12 @@
 
 // Site
 
+@import 'site/slick'; // <-- Slider https://kenwheeler.github.io/slick/
+@import 'site/slick-theme'; // <-- Slider https://kenwheeler.github.io/slick/
+
 @import 'site/normalizer'; // <-- Normalizer Lib || https://necolas.github.io/normalize.css/
 @import 'site/fonts'; // <-- Fonts of project || https://fonts.google.com/
+
 @import 'site/text';
 @import 'site/title';
 

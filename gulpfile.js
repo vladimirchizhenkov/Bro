@@ -21,7 +21,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function() {
-	return gulp.src(['app/libs/slick.min.js', 'least.min.js', 'jquery.lazyload.js']) // если нужно > 1 - библиотеки перечисляются через ','
+	return gulp.src(['app/js/libs/slick.min.js']) // если нужно > 1 - библиотеки перечисляются через ','
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
 	.pipe(gulp.dest('app/js'));
@@ -80,7 +80,7 @@ gulp.task('clean-cache', function() {
 gulp.task('watch', ['browser-sync', 'scripts'], function (){ //bs и sass выполняются до watch
 	gulp.watch('app/sass/site/**/*.scss', ['sass']);
 	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/**/*.js', browserSync.reload);
+	gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
 //установить bower -g; создать файл в корне проекта .bowerrc и в нем прописать { "directory" : "app/libs/"}
