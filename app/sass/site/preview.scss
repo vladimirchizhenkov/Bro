@@ -21,3 +21,38 @@
   }
 
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .preview {
+    position: relative;
+    margin-left: 0px;
+    flex-direction: column;
+
+    &__title {
+      position: relative;
+      z-index: 2;
+      margin-top: 80px;
+      margin-bottom: 13px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+    }
+
+    &__right {
+      position: absolute;
+      z-index: 1;
+      top: -60px;
+      right: -20px;
+      width: 244px;
+      height: 220px;
+      background-image: url('/img/img__spine--mobile.png');
+      background-repeat: no-repeat;
+      background-position: 100%;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}
