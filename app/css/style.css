@@ -869,6 +869,9 @@ input[type=number]::-webkit-inner-spin-button {
 
 .header {
   margin-top: 39px; }
+  .header__info-company {
+    margin-left: 78px;
+    margin-top: 17px; }
   .header__tel {
     margin-left: auto;
     margin-top: 19px;
