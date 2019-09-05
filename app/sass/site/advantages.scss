@@ -41,22 +41,22 @@
 
     &--like {
       &::before {
-        background-image: url('/img/icon__advantages--like.png');
+        background-image: url('../img/icon__advantages--like.png');
       }
     }
     &--spanish-flag {
       &::before {
-        background-image: url('/img/icon__advantages--spanish-flag.png');
+        background-image: url('../img/icon__advantages--spanish-flag.png');
       }
     }
     &--award {
       &::before {
-        background-image: url('/img/icon__advantages--award.png');
+        background-image: url('../img/icon__advantages--award.png');
       }
     }
     &--shield {
       &::before {
-        background-image: url('/img/icon__advantages--shield.png');
+        background-image: url('../img/icon__advantages--shield.png');
       }
     }
   }

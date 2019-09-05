@@ -224,7 +224,7 @@
 <div class="body-wrapper">
 
     <div class="header">
-        <div class="burger">
+        <div id="burgerMobile" class="burger">
             <div class="burger__container">
                 <div class="burger__logo logo">
                     <a href="/" class="logo__link">
@@ -232,7 +232,7 @@
                     </a>
                 </div>
                 <div class="burger__wrapper wrapper">
-                    <span></span>
+                    <span id="burgerMobileClose" class="burger__close btn btn--close"></span>
                     <div class="burger__info-company info-company">
                         <ul class="info-company__list">
                             <li class="info-company__item info-company__item--burger"><a href="#"
@@ -282,7 +282,7 @@
                 </div>
                 <a href="tel:3034572040" class="header__tel link link--tel">(303) 457-2040</a>
                 <a href="#" class="header__btn btn btn--orange">schedule appointment</a>
-                <span class="header__burger-btn btn btn--burger"></span>
+                <span data-btn="#burgerMobile" class="header__burger-btn btn btn--burger"></span>
             </div>
         </div>
     </div>

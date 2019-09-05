@@ -16,7 +16,7 @@
       content: '';
       width: 130px;
       height: 100px;
-      background-image: url('/img/icon__testimonials--quote.png');
+      background-image: url('../img/icon__testimonials--quote.png');
       background-repeat: no-repeat;
       background-position: 50% 50%;
       top: 0;
@@ -70,22 +70,22 @@
   &__arrow-left {
     left: -3px;
     transform: rotateY(-180deg);
-    background-image: url('/img/icon__slider--arrow-right.png');
+    background-image: url('../img/icon__slider--arrow-right.png');
   }
 
   &__arrow-left.slick-disabled {
     transform: rotateY(0deg);
-    background-image: url('/img/icon__slider--arrow-left.png');
+    background-image: url('../img/icon__slider--arrow-left.png');
   }
 
   &__arrow-right {
     right: -3px;
-    background-image: url('/img/icon__slider--arrow-right.png');
+    background-image: url('../img/icon__slider--arrow-right.png');
   }
 
   &__arrow-right.slick-disabled {
     transform: rotateY(-180deg);
-    background-image: url('/img/icon__slider--arrow-left.png');
+    background-image: url('../img/icon__slider--arrow-left.png');
   }
 
   &__dots {

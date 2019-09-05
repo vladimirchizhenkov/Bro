@@ -29,6 +29,33 @@
     }
   }
 
+  &--close {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+
+    &::before, &::after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: '';
+      width: 25px;
+      height: 2px;
+      background-color: $colorBlue;
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+  }
+
   &--orange {
     font-size: $fontSizeXS;
     background-color: $colorOrange;
