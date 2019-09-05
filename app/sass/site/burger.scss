@@ -1,0 +1,36 @@
+.burger {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  background-color: $colorSkiye;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .burger {
+    display: block;
+
+    &__container {
+      margin: 0 auto;
+      min-width: 320px;
+      max-width: 320px;
+      padding: 0 20px 0;
+    }
+
+    &__logo {
+      margin-top: 20px;
+      margin-bottom: 44px;
+    }
+
+    &__info-company {
+      margin-bottom: 49px;
+    }
+
+    &__social {
+      margin-top: 31px;
+    }
+  }
+}

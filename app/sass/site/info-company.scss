@@ -1,21 +1,23 @@
 .info-company {
 
+  &__list {
+
+    &--burger {
+
+    }
+  }
+
   &__item {
     margin-right: 30px;
     &:last-child {
       margin-right: 0;
     }
-  }
 
-  &--ml-78 {
-    margin-left: 78px;
-  }
-
-  &--mt-17 {
-    margin-top: 17px;
-  }
-
-  &--mr-227 {
+    &--burger {
+      margin-right: 0;
+      margin-bottom: 26px;
+      text-align: center;
+    }
   }
 
 }

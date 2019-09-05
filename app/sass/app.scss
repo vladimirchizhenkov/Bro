@@ -3,9 +3,6 @@
 Элементы отделяю от блока двойным подчеркиванием "__" block__element;
 Модификатор отделяю от блока/элемента двойным тире "--" block--modify, element--modify;
 
-Для сохранения независимости(переиспользования) блоков, использую модификаторы для позиционирования;
-Нэйминг m - margin, p - padding; t - top, b - bottom, l - left, r - right. block--mt-12;
-
 */
 
 @import 'variable'; // <-- Variables: colors, font-sizes, etc...
@@ -26,6 +23,7 @@
 @import 'site/advantages';
 @import 'site/body-wrapper';
 @import 'site/btn';
+@import 'site/burger';
 @import 'site/contact';
 @import 'site/container';
 @import 'site/content';

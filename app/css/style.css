@@ -4,9 +4,6 @@
 Элементы отделяю от блока двойным подчеркиванием "__" block__element;
 Модификатор отделяю от блока/элемента двойным тире "--" block--modify, element--modify;
 
-Для сохранения независимости(переиспользования) блоков, использую модификаторы для позиционирования;
-Нэйминг m - margin, p - padding; t - top, b - bottom, l - left, r - right. block--mt-12;
-
 */
 /* Slider */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
@@ -699,6 +696,9 @@ input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
+.no-scroll {
+  overflow: hidden; }
+
 .about-therapy {
   margin-bottom: 100px; }
   .about-therapy__rigth {
@@ -714,7 +714,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .about-therapy {
-    display: none; } }
+    display: none !important; } }
 
 .advantages {
   margin-left: 100px;
@@ -815,12 +815,41 @@ input[type=number]::-webkit-inner-spin-button {
     background-color: #056CDE;
     max-width: 310px;
     line-height: 50px; }
+  .btn--wide {
+    max-width: 320px;
+    width: 100%; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .btn--blue {
     font-size: 13px;
     max-width: 280px;
     line-height: 40px; } }
+
+.burger {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  background-color: #D5E9FF;
+  height: 100vh;
+  overflow-y: hidden; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .burger {
+    display: block; }
+    .burger__container {
+      margin: 0 auto;
+      min-width: 320px;
+      max-width: 320px;
+      padding: 0 20px 0; }
+    .burger__logo {
+      margin-top: 20px;
+      margin-bottom: 44px; }
+    .burger__info-company {
+      margin-bottom: 49px; }
+    .burger__social {
+      margin-top: 31px; } }
 
 .contact {
   position: relative;
@@ -934,7 +963,7 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-align-self: flex-start;
         -ms-flex-item-align: start;
             align-self: flex-start; }
-  .header__burger {
+  .header__burger-btn {
     display: none; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -942,7 +971,7 @@ input[type=number]::-webkit-inner-spin-button {
     margin-top: 15px; }
     .header__info-company, .header__tel, .header__btn {
       display: none; }
-    .header__burger {
+    .header__burger-btn {
       display: block;
       margin-left: auto; } }
 
@@ -950,12 +979,10 @@ input[type=number]::-webkit-inner-spin-button {
   margin-right: 30px; }
   .info-company__item:last-child {
     margin-right: 0; }
-
-.info-company--ml-78 {
-  margin-left: 78px; }
-
-.info-company--mt-17 {
-  margin-top: 17px; }
+  .info-company__item--burger {
+    margin-right: 0;
+    margin-bottom: 26px;
+    text-align: center; }
 
 .link {
   color: #3A4959;
@@ -1023,6 +1050,8 @@ input[type=number]::-webkit-inner-spin-button {
       background-repeat: no-repeat;
       background-position: 100%; }
     .preview__img {
+      display: none; }
+    .preview__social {
       display: none; } }
 
 .services {
@@ -1170,6 +1199,12 @@ input[type=number]::-webkit-inner-spin-button {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+
+.wrapper--center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .wrapper--align-center {
   -webkit-box-align: center;

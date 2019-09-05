@@ -23,6 +23,6 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .about-therapy {
-    display: none;
+    display: none !important;
   }
 }
