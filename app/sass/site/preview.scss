@@ -26,6 +26,7 @@
   .preview {
     position: relative;
     margin-left: 0px;
+    margin-bottom: 49px;
     flex-direction: column;
 
     &__title {
@@ -53,6 +54,10 @@
 
     &__img {
       display: none;
+    }
+
+    &__btn {
+      margin-bottom: 0;
     }
 
     &__social {
