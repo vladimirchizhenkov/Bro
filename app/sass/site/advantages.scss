@@ -70,6 +70,7 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .advantages {
     margin-left: 0;
+    margin-bottom: 35px;
 
     &__text {
       display: none;
@@ -85,6 +86,23 @@
       padding-left: 70px;
       margin-bottom: 0;
       min-height: 88px;
+      &:nth-child(3), &:nth-child(4) {
+        padding-right: 0;
+      }
+
+      &--like {
+        order: 1;
+      }
+      &--spanish-flag {
+        order: 3;
+        margin-bottom: 22px;
+      }
+      &--award {
+        order: 2;
+      }
+      &--shield {
+        order: 4;
+      }
     }
 
     &__box:nth-child(odd) {

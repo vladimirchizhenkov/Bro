@@ -772,7 +772,8 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .advantages {
-    margin-left: 0; }
+    margin-left: 0;
+    margin-bottom: 35px; }
     .advantages__text {
       display: none; }
     .advantages__caption {
@@ -783,6 +784,29 @@ input[type=number]::-webkit-inner-spin-button {
       padding-left: 70px;
       margin-bottom: 0;
       min-height: 88px; }
+      .advantages__box:nth-child(3), .advantages__box:nth-child(4) {
+        padding-right: 0; }
+      .advantages__box--like {
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+            -ms-flex-order: 1;
+                order: 1; }
+      .advantages__box--spanish-flag {
+        -webkit-box-ordinal-group: 4;
+        -webkit-order: 3;
+            -ms-flex-order: 3;
+                order: 3;
+        margin-bottom: 22px; }
+      .advantages__box--award {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+            -ms-flex-order: 2;
+                order: 2; }
+      .advantages__box--shield {
+        -webkit-box-ordinal-group: 5;
+        -webkit-order: 4;
+            -ms-flex-order: 4;
+                order: 4; }
     .advantages__box:nth-child(odd) {
       margin-left: 0;
       margin-right: 0; }
@@ -996,6 +1020,31 @@ input[type=number]::-webkit-inner-spin-button {
     width: 100%;
     -webkit-box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15);
             box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15); }
+  .doctor__wrapper-mobile {
+    display: none; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .doctor__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .doctor__left {
+    max-width: 280px; }
+  .doctor__right {
+    max-width: 280px; }
+  .doctor__text {
+    display: none; }
+  .doctor__img {
+    width: 280px; }
+  .doctor__title {
+    margin-top: 22px;
+    margin-bottom: 12px; }
+  .doctor__wrapper-mobile {
+    display: block; }
+  .doctor__text-mobile {
+    margin-bottom: 5px; } }
 
 .footer {
   padding-bottom: 60px; }
