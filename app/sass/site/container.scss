@@ -5,6 +5,13 @@
   padding: 0 15px 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .container {
+    max-width: 768px;
+    padding: 0 35px 0;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     max-width: 320px;
