@@ -1454,8 +1454,8 @@ input[type=number]::-webkit-inner-spin-button {
       padding-top: 26px;
       padding-left: 20px;
       padding-right: 20px;
-      -webkit-box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15);
-              box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15); }
+      -webkit-box-shadow: none;
+              box-shadow: none; }
       .testimonials__item:nth-child(odd) {
         margin-right: 0; }
       .testimonials__item:nth-child(even) {

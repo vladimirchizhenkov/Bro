@@ -3,7 +3,10 @@ $('.testimonials__slider').slick({
     infinite: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots: false,
+    dots: true,
+    customPaging: function (slider, i) {
+        return '<div class="testimonials__dots"></div>';
+    },
     arrows: false,
     responsive: [
         {
