@@ -1141,7 +1141,8 @@ input[type=number]::-webkit-inner-spin-button {
     line-height: 21px;
     margin-bottom: 0; }
   .footer__center {
-    max-width: 250px; }
+    max-width: 250px;
+    margin-bottom: 25px; }
   .footer__right {
     margin-left: 0;
     text-align: left; }
