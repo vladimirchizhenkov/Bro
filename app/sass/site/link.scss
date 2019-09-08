@@ -24,3 +24,24 @@
   }
 
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .link {
+
+    &--tag {
+      font-size: 11px;
+      line-height: 15px;
+    }
+
+    &--tel {
+      &-upper {
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.75px;
+      }
+    }
+
+  }
+
+}

@@ -212,6 +212,10 @@
     .slick-dots li.slick-active .testimonials__dots {
       background-color: #056CDE; }
 
+@media screen and (min-width: 320px) and (max-width: 320px) {
+  .slick-dots {
+    bottom: -52px; } }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -981,6 +985,26 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-border-bottom-left-radius: 10px;
             border-bottom-left-radius: 10px; }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .contact {
+    max-width: 280px; }
+    .contact::before {
+      -webkit-background-size: contain;
+              background-size: contain;
+      width: 117px;
+      left: 18px;
+      top: -47px; }
+    .contact__wrapper {
+      padding: 40px 20px 40px 20px; }
+    .contact__title {
+      margin-bottom: 20px; }
+    .contact__text {
+      display: none; }
+    .contact__btn {
+      margin-top: 20px; }
+    .contact__map {
+      min-height: 290px; } }
+
 .container {
   width: 100%;
   max-width: 1210px;
@@ -1024,27 +1048,29 @@ input[type=number]::-webkit-inner-spin-button {
     display: none; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .doctor__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .doctor__left {
-    max-width: 280px; }
-  .doctor__right {
-    max-width: 280px; }
-  .doctor__text {
-    display: none; }
-  .doctor__img {
-    width: 280px; }
-  .doctor__title {
-    margin-top: 22px;
-    margin-bottom: 12px; }
-  .doctor__wrapper-mobile {
-    display: block; }
-  .doctor__text-mobile {
-    margin-bottom: 5px; } }
+  .doctor {
+    margin-bottom: 50px; }
+    .doctor__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .doctor__left {
+      max-width: 280px; }
+    .doctor__right {
+      max-width: 280px; }
+    .doctor__text {
+      display: none; }
+    .doctor__img {
+      width: 280px; }
+    .doctor__title {
+      margin-top: 22px;
+      margin-bottom: 12px; }
+    .doctor__wrapper-mobile {
+      display: block; }
+    .doctor__text-mobile {
+      margin-bottom: 5px; } }
 
 .footer {
   padding-bottom: 60px; }
@@ -1123,6 +1149,15 @@ input[type=number]::-webkit-inner-spin-button {
   .link--tag {
     color: #056CDE;
     line-height: 18px; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .link--tag {
+    font-size: 11px;
+    line-height: 15px; }
+  .link--tel-upper {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.75px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .logo {
@@ -1330,6 +1365,42 @@ input[type=number]::-webkit-inner-spin-button {
     background-color: #D5E9FF;
     -webkit-border-radius: 100%;
             border-radius: 100%; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .testimonials {
+    margin-bottom: 107px; }
+    .testimonials__title {
+      margin-left: 0;
+      margin-bottom: 24px; }
+    .testimonials__wrapper {
+      width: 280px;
+      margin-left: 0;
+      -webkit-border-radius: 10px;
+              border-radius: 10px; }
+      .testimonials__wrapper::before {
+        display: none; }
+    .testimonials__item {
+      width: 280px !important;
+      min-height: 295px;
+      padding-top: 26px;
+      padding-left: 20px;
+      padding-right: 20px;
+      -webkit-box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15);
+              box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15); }
+      .testimonials__item:nth-child(odd) {
+        margin-right: 0; }
+      .testimonials__item:nth-child(even) {
+        margin-left: 0; }
+    .testimonials__arrow-left, .testimonials__arrow-right {
+      display: none; }
+    .testimonials__text {
+      font-size: 14px;
+      line-height: 21px;
+      margin-bottom: 5px; }
+    .testimonials__author {
+      margin-top: 14px;
+      font-size: 16px;
+      line-height: 20px; } }
 
 .wrapper--flex {
   display: -webkit-box;

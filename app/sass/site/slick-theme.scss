@@ -195,3 +195,9 @@ $slick-opacity-not-active: 0.25 !default;
     }
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 320px) {
+  .slick-dots {
+    bottom: -52px;
+  }
+}

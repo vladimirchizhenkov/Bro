@@ -43,3 +43,38 @@
   }
 
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .contact {
+    max-width: 280px;
+    &::before {
+      background-size: contain;
+      width: 117px;
+      left: 18px;
+      top: -47px;
+    }
+
+    &__wrapper {
+      padding: 40px 20px 40px 20px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__btn {
+      margin-top: 20px;
+    }
+
+    &__map {
+      min-height: 290px;
+    }
+
+  }
+
+}
