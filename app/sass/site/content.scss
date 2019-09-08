@@ -5,9 +5,19 @@
   background: url('../img/img__spot--top-white.svg') 0px 675px no-repeat, url('../img/img__spot--middle-blue.svg') 100% 2082px no-repeat, url('../img/img__spot--bottom-white.svg') -35px 3485px no-repeat;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+
+  .content {
+    background: none;
+  }
+
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
+
   .content {
     margin-bottom: 55px;
     background: none;
   }
+
 }

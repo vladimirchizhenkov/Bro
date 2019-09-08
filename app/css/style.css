@@ -683,7 +683,10 @@ template {
       letter-spacing: 1px; }
     .title--lower {
       font-size: 18px;
-      line-height: 21px; } }
+      line-height: 21px; }
+    .title--small {
+      font-size: 14px;
+      line-height: 17px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .title {
@@ -810,6 +813,33 @@ input[type=number]::-webkit-inner-spin-button {
       background-image: url("../img/icon__advantages--shield.png"); }
   .advantages__caption {
     margin-bottom: 8px; }
+
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .advantages {
+    margin-left: 60px; }
+    .advantages__title {
+      margin-top: 8px; }
+    .advantages__text {
+      max-width: 450px;
+      margin-bottom: 65px; }
+    .advantages__box {
+      max-width: 270px;
+      min-height: 145px;
+      padding-top: 35px;
+      padding-left: 19px;
+      margin-bottom: 59px; }
+      .advantages__box::before {
+        width: 50px;
+        height: 50px;
+        top: -31px;
+        left: 19px;
+        -webkit-background-size: contain;
+                background-size: contain; }
+      .advantages__box:nth-child(odd) {
+        margin-left: 0;
+        margin-right: 30px; }
+    .advantages__caption {
+      margin-bottom: 4px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .advantages {
@@ -1119,6 +1149,10 @@ input[type=number]::-webkit-inner-spin-button {
   margin-bottom: 32px;
   padding-top: 32px;
   background: url("../img/img__spot--top-white.svg") 0px 675px no-repeat, url("../img/img__spot--middle-blue.svg") 100% 2082px no-repeat, url("../img/img__spot--bottom-white.svg") -35px 3485px no-repeat; }
+
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .content {
+    background: none; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .content {
@@ -1446,7 +1480,8 @@ input[type=number]::-webkit-inner-spin-button {
 
 @media screen and (min-width: 768px) and (max-width: 1180px) {
   .services {
-    margin-left: 60px; }
+    margin-left: 60px;
+    margin-bottom: 0; }
     .services__title {
       margin-bottom: 30px; }
     .services__left {
