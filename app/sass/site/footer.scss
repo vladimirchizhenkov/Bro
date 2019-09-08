@@ -38,7 +38,34 @@
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 676px) {
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+
+  .footer {
+
+    &__social {
+      margin-right: 10px;
+    }
+
+    &__bottom {
+      flex-wrap: wrap;
+    }
+
+    &__left p {
+    }
+
+    &__center {
+      order: 3;
+      margin-top: -28px;
+    }
+
+    &__right-wrapper {
+      margin-bottom: 5px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
 
   .footer {
 
