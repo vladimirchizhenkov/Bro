@@ -44,7 +44,35 @@
 
 }
 
+@media screen and (min-width: 767px) and (max-width: 1180px) {
+
+  .title {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0;
+
+    &::before {
+      width: 80px;
+      height: 3px;
+      margin-bottom: 21px;
+    }
+
+    &--major {
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: 1px;
+    }
+
+    &--lower {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
+
   .title {
     font-size: 22px;
     line-height: 25px;

@@ -22,7 +22,52 @@
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+
+  .preview {
+    position: relative;
+    margin-left: 59px;
+    margin-bottom: 9px;
+
+    &__left {
+      max-width: 280px;
+    }
+
+    &__right {
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      right: 5px;
+      width: 330px;
+      height: 395px;
+      background-image: url('../img/img__spine--tablet.png');
+      background-repeat: no-repeat;
+      background-position: 100%;
+      background-size: contain;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__title {
+      margin-top: 7px;
+      margin-bottom: 19px;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+    }
+
+    &__social {
+      display: none;
+    }
+  }
+
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
+
   .preview {
     position: relative;
     margin-left: 0px;
@@ -64,4 +109,5 @@
       display: none;
     }
   }
+
 }

@@ -622,6 +622,14 @@ template {
     font-size: 16px;
     line-height: 24px; }
 
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .text {
+    font-size: 15px;
+    line-height: 25px; }
+    .text--size-s {
+      font-size: 14px;
+      line-height: 21px; } }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .text {
     font-size: 15px;
@@ -659,6 +667,23 @@ template {
     letter-spacing: 0; }
     .title--small::before {
       display: none; }
+
+@media screen and (min-width: 767px) and (max-width: 1180px) {
+  .title {
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0; }
+    .title::before {
+      width: 80px;
+      height: 3px;
+      margin-bottom: 21px; }
+    .title--major {
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: 1px; }
+    .title--lower {
+      font-size: 18px;
+      line-height: 21px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .title {
@@ -725,6 +750,18 @@ input[type=number]::-webkit-inner-spin-button {
     margin-bottom: 19px; }
   .about-therapy__text {
     margin-bottom: 34px; }
+
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .about-therapy {
+    margin-bottom: 70px; }
+    .about-therapy__left {
+      margin-right: 39px; }
+    .about-therapy__img {
+      width: 320px; }
+    .about-therapy__title {
+      margin-top: 40px; }
+    .about-therapy__text {
+      margin-bottom: 14px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .about-therapy {
@@ -905,6 +942,12 @@ input[type=number]::-webkit-inner-spin-button {
   .btn--wide {
     max-width: 320px;
     width: 100%; }
+
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .btn--blue {
+    font-size: 13px;
+    line-height: 40px;
+    max-width: 240px; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .btn--blue {
@@ -1268,6 +1311,11 @@ input[type=number]::-webkit-inner-spin-button {
     color: #056CDE;
     line-height: 18px; }
 
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .link--tag {
+    font-size: 11px;
+    line-height: 15px; } }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .link--tag {
     font-size: 11px;
@@ -1304,6 +1352,35 @@ input[type=number]::-webkit-inner-spin-button {
     margin-bottom: 34px; }
   .preview__btn {
     margin-bottom: 106px; }
+
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .preview {
+    position: relative;
+    margin-left: 59px;
+    margin-bottom: 9px; }
+    .preview__left {
+      max-width: 280px; }
+    .preview__right {
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      right: 5px;
+      width: 330px;
+      height: 395px;
+      background-image: url("../img/img__spine--tablet.png");
+      background-repeat: no-repeat;
+      background-position: 100%;
+      -webkit-background-size: contain;
+              background-size: contain; }
+    .preview__img {
+      display: none; }
+    .preview__title {
+      margin-top: 7px;
+      margin-bottom: 19px; }
+    .preview__text {
+      margin-bottom: 20px; }
+    .preview__social {
+      display: none; } }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .preview {
@@ -1367,7 +1444,25 @@ input[type=number]::-webkit-inner-spin-button {
     margin-right: 20px;
     margin-bottom: 7px; }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .services {
+    margin-left: 60px; }
+    .services__title {
+      margin-bottom: 30px; }
+    .services__left {
+      margin-right: 29px; }
+    .services__right {
+      margin-top: 159px; }
+    .services__box {
+      width: 270px;
+      min-height: 341px;
+      margin-bottom: 39px; }
+    .services__wrapper {
+      padding: 18px 20px 20px 18px; }
+    .services__img {
+      width: 270px; } }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .services {
     margin-left: 0;
     margin-bottom: 30px; }
