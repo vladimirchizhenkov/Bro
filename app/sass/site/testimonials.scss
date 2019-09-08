@@ -98,6 +98,39 @@
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+
+  .testimonials {
+    margin-bottom: 139px;
+
+    &__title {
+      margin-left: 59px;
+      margin-bottom: 30px;
+    }
+
+    &__wrapper {
+      width: 590px;
+      margin-left: 59px;
+      &::before {
+        display: none;
+      }
+    }
+
+    &__item {
+      width: 280px;
+      min-height: 290px;
+      &:nth-child(odd) {
+        margin-right: 15px;
+      }
+      &:nth-child(even) {
+        margin-left: 15px;
+      }
+    }
+
+  }
+
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
   .testimonials {
