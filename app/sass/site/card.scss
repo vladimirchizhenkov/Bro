@@ -23,9 +23,36 @@
       margin-bottom: 0;
     }
 
-    &--colored {
-      color: $colorOrange;
+    &--color-orange, &--color-green, &--color-red, &--color-violet, &--color-brown, &--color-blue, &--color-yellow {
       font-weight: bold;
+    }
+
+    &--color-orange {
+      color: $colorOrange;
+    }
+
+    &--color-green {
+      color: $colorGreen;
+    }
+
+    &--color-red {
+      color: $colorRed;
+    }
+
+    &--color-violet {
+      color: $colorViolet;
+    }
+
+    &--color-brown {
+      color: $colorBrown;
+    }
+
+    &--color-blue {
+      color: $colorBlue;
+    }
+
+    &--color-yellow {
+      color: $colorYellow;
     }
   }
 }

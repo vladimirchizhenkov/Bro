@@ -14,24 +14,70 @@
   &__tab {
     cursor: pointer;
     font-size: $fontSizeM;
-    color: $colorGrey;
     line-height: 28px;
     font-weight: bold;
     padding-bottom: 15px;
     margin-right: 32px ;
-    border-bottom: 4px solid transparent;
 
-    &:hover {
-      color: $colorRed;
-    }
-
-    &--active {
+    &--ub {
       color: $colorOrange;
-      border-bottom:  4px solid $colorOrange;
-
+      border-bottom: 4px solid $colorOrange;
       &:hover {
         color: $colorOrange;
       }
+    }
+
+    &--akadem {
+      color: $colorGreen;
+      border-bottom: 4px solid $colorGreen;
+      &:hover {
+        color: $colorGreen;
+      }
+    }
+
+    &--bograda {
+      color: $colorRed;
+      border-bottom: 4px solid $colorRed;
+      &:hover {
+        color: $colorRed;
+      }
+    }
+
+    &--alex {
+      color: $colorViolet;
+      border-bottom: 4px solid $colorViolet;
+      &:hover {
+        color: $colorViolet;
+      }
+    }
+
+    &--vzlet {
+      color: $colorBrown;
+      border-bottom: 4px solid $colorBrown;
+      &:hover {
+        color: $colorBrown;
+      }
+    }
+
+    &--obrazcovo {
+      color: $colorYellow;
+      border-bottom: 4px solid $colorYellow;
+      &:hover {
+        color: $colorYellow;
+      }
+    }
+
+    &--svet {
+      color: $colorBlue;
+      border-bottom: 4px solid $colorBlue;
+      &:hover {
+        color: $colorBlue;
+      }
+    }
+
+    &--default {
+      color: $colorGrey;
+      border-bottom: 4px solid transparent;
     }
   }
 
@@ -90,7 +136,22 @@
 
   &__item {
     display: flex;
+    flex-direction: column;
+
+    &--hide {
+      display: none;
+    }
+  }
+
+  &__top {
+    display: flex;
     justify-content: space-between;
+  }
+
+  &__bottom {
+    &--btn-position {
+      margin: 80px auto;
+    }
   }
 
 }
