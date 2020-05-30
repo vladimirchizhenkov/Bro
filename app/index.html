@@ -17,23 +17,23 @@
         <div class="slider">
             <div class="slider__control">
                 <ul class="slider__tabs">
-                    <li class="slider__tab slider__tab--ub">Южный берег</li>
-                    <li class="slider__tab slider__tab--akadem slider__tab--akadem-active slider__tab--default">Академгородок</li>
-                    <li class="slider__tab slider__tab--bograda slider__tab--bograda-active slider__tab--default">Бограда</li>
-                    <li class="slider__tab slider__tab--alex slider__tab--alex-active slider__tab--default">Александровский</li>
-                    <li class="slider__tab slider__tab--vzlet slider__tab--vzlet-active slider__tab--default">Взлетная 7</li>
-                    <li class="slider__tab slider__tab--obrazcovo slider__tab--obrazcovo-active slider__tab--default">Образцово</li>
-                    <li class="slider__tab slider__tab--svet slider__tab--svet-active slider__tab--default">Светлогорский</li>
+                    <li id="ub" class="slider__tab slider__tab--ub">Южный берег</li>
+                    <li id="akadem" class="slider__tab slider__tab--akadem slider__tab--default">Академгородок</li>
+                    <li id="bograda" class="slider__tab slider__tab--bograda slider__tab--default">Бограда</li>
+                    <li id="alex" class="slider__tab slider__tab--alex slider__tab--default">Александровский</li>
+                    <li id="vzlet" class="slider__tab slider__tab--vzlet slider__tab--vzlet-active slider__tab--default">Взлетная 7</li>
+                    <li id="obrazcovo" class="slider__tab slider__tab--obrazcovo slider__tab--default">Образцово</li>
+                    <li id="svet" class="slider__tab slider__tab--svet slider__tab--default">Светлогорский</li>
                 </ul>
                 <div class="slider__arrows">
-                    <span class="slider__arrow slider__arrow--prev slider__arrow--disable"></span>
-                    <span class="slider__arrow slider__arrow--next"></span>
+                    <span id="btnPrev" class="slider__arrow slider__arrow--prev"></span>
+                    <span id="btnNext" class="slider__arrow slider__arrow--next"></span>
                 </div>
             </div>
 
             <div class="slider__content">
 
-                <div class="slider__item" data-slide="ub">
+                <div class="slider__item"  data-project="ub">
                     <div class="slider__top">
                         <a class="card" href="#first">
                             <div class="card__box">
@@ -93,7 +93,7 @@
                     </div>
                 </div>
 
-                <div class="slider__item slider__item--hide" data-slide="akadem">
+                <div class="slider__item slider__item--hide" data-project="akadem">
                     <div class="slider__top">
                         <a class="card" href="#first">
                             <div class="card__box">
@@ -153,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="slider__item slider__item--hide" data-slide="bograda">
+                <div class="slider__item slider__item--hide" data-project="bograda">
                     <div class="slider__top">
                         <a class="card" href="#first">
                             <div class="card__box">
@@ -213,7 +213,7 @@
                     </div>
                 </div>
 
-                <div class="slider__item slider__item--hide" data-slide="alex">
+                <div class="slider__item slider__item--hide" data-project="alex">
                     <div class="slider__top">
                         <a class="card" href="#first">
                             <div class="card__box">
@@ -273,7 +273,7 @@
                     </div>
                 </div>
 
-                <div class="slider__item slider__item--hide" data-slide="vzlet">
+                <div class="slider__item slider__item--hide" data-project="vzlet">
                     <div class="slider__top">
                         <a class="card" href="#first">
                             <div class="card__box">
@@ -333,7 +333,7 @@
                     </div>
                 </div>
 
-                <div class="slider__item slider__item--hide" data-slide="obrazcovo">
+                <div class="slider__item slider__item--hide" data-project="obrazcovo">
                     <div class="slider__top">
                         <a class="card" href="#first">
                             <div class="card__box">
@@ -393,7 +393,7 @@
                     </div>
                 </div>
 
-                <div class="slider__item slider__item--hide" data-slide="svet">
+                <div class="slider__item slider__item--hide" data-project="svet">
                     <div class="slider__top">
                         <a class="card" href="#first">
                             <div class="card__box">
