@@ -481,7 +481,10 @@ input[type=number]::-webkit-inner-spin-button {
   line-height: 28px;
   font-weight: bold;
   padding-bottom: 15px;
-  margin-right: 32px; }
+  margin-right: 32px;
+  -webkit-transition: color 0.25s ease;
+  -o-transition: color 0.25s ease;
+  transition: color 0.25s ease; }
   .slider__tab--ub {
     color: #F8903D;
     border-bottom: 4px solid #F8903D; }

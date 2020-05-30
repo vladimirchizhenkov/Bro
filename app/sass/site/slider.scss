@@ -18,6 +18,7 @@
     font-weight: bold;
     padding-bottom: 15px;
     margin-right: 32px ;
+    transition: color 0.25s ease;
 
     &--ub {
       color: $colorOrange;
