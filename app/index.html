@@ -5,585 +5,97 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DirectLine Test</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        var map;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('ya-map'), {
-                center: {lat: 53.558886, lng: 49.215480},
-                zoom: 15,
-                styles: [
-                    {
-                        "featureType": "all",
-                        "elementType": "labels.text.fill",
-                        "stylers": [
-                            {
-                                "saturation": "16"
-                            },
-                            {
-                                "color": "#19222e"
-                            },
-                            {
-                                "lightness": "35"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "all",
-                        "elementType": "labels.text.stroke",
-                        "stylers": [
-                            {
-                                "visibility": "on"
-                            },
-                            {
-                                "color": "#ffffff"
-                            },
-                            {
-                                "lightness": 16
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "all",
-                        "elementType": "labels.icon",
-                        "stylers": [
-                            {
-                                "visibility": "off"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative",
-                        "elementType": "geometry.fill",
-                        "stylers": [
-                            {
-                                "color": "#fefefe"
-                            },
-                            {
-                                "lightness": 20
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "administrative",
-                        "elementType": "geometry.stroke",
-                        "stylers": [
-                            {
-                                "color": "#fefefe"
-                            },
-                            {
-                                "lightness": 17
-                            },
-                            {
-                                "weight": 1.2
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "landscape",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "color": "#ddedff"
-                            },
-                            {
-                                "lightness": "-2"
-                            },
-                            {
-                                "saturation": "-5"
-                            },
-                            {
-                                "gamma": "1.00"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "color": "#ddedff"
-                            },
-                            {
-                                "lightness": "-6"
-                            },
-                            {
-                                "saturation": "8"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "poi.park",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "color": "#ddedff"
-                            },
-                            {
-                                "lightness": "-5"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "geometry.fill",
-                        "stylers": [
-                            {
-                                "color": "#ddedff"
-                            },
-                            {
-                                "lightness": "-14"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.highway",
-                        "elementType": "geometry.stroke",
-                        "stylers": [
-                            {
-                                "color": "#ffffff"
-                            },
-                            {
-                                "lightness": 29
-                            },
-                            {
-                                "weight": 0.2
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.arterial",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "color": "#ddedff"
-                            },
-                            {
-                                "lightness": "35"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "road.local",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "color": "#ddedff"
-                            },
-                            {
-                                "lightness": "-9"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "transit",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "color": "#ffffff"
-                            },
-                            {
-                                "lightness": "7"
-                            }
-                        ]
-                    },
-                    {
-                        "featureType": "water",
-                        "elementType": "geometry",
-                        "stylers": [
-                            {
-                                "color": "#ddedff"
-                            },
-                            {
-                                "lightness": "-8"
-                            }
-                        ]
-                    }
-                ]
-
-            });
-
-            var marker = new google.maps.Marker({
-                position: {lat: 53.558886, lng: 49.215480},
-                map: map,
-                title: 'Hello, DL!',
-                icon: {
-                    url: "/img/icon__contact--map-mark.png"
-                }
-            });
-        }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArJkKNmyWBxJpseBDeO1x9tGrt2Sun6H8&callback=initMap"
-            async defer>
-
-    </script>
 </head>
 <body>
 <div class="body-wrapper">
+    <div class="container">
 
-    <div class="header">
-        <div id="burgerMobile" class="burger">
-            <div class="burger__container">
-                <div class="burger__logo logo">
-                    <a href="/" class="logo__link">
-                        <img src="img/logo--main-mobile.png" alt="main logo mobile" class="logo__img">
+        <h2 class="title title__slider">Выберите проект</h2>
+
+        <div class="slider">
+            <div class="slider__control">
+                <ul class="slider__tabs">
+                    <li class="slider__tab slider__tab--active">Южный берег</li>
+                    <li class="slider__tab">Академгородок</li>
+                    <li class="slider__tab">Бограда</li>
+                    <li class="slider__tab">Александровский</li>
+                    <li class="slider__tab">Валетная 7</li>
+                    <li class="slider__tab">Образцово</li>
+                    <li class="slider__tab">Светлогорский</li>
+                </ul>
+                <div class="slider__arrows">
+                    <span class="slider__arrow slider__arrow--prev slider__arrow--disable"></span>
+                    <span class="slider__arrow slider__arrow--next"></span>
+                </div>
+            </div>
+
+            <div class="slider__content">
+
+                <div class="slider__item">
+                    <a class="card" href="#first">
+                        <div class="card__box">
+                            <img class="card__img" src="img/schema.png" alt="room">
+                            <div class="card__description">
+                                <div class="card__left">
+                                    <div class="card__text">Количество комнат</div>
+                                    <div class="card__text">Площадь</div>
+                                    <div class="card__text">Цена</div>
+                                </div>
+                                <div class="card__right">
+                                    <div class="card__text card__text--colored">1</div>
+                                    <div class="card__text card__text--colored">36,69 м2</div>
+                                    <div class="card__text card__text--colored">3 300 000 &#8381;</div>
+                                </div>
+                            </div>
+                        </div>
                     </a>
-                </div>
-                <div class="burger__wrapper wrapper">
-                    <span id="burgerMobileClose" class="burger__close btn btn--close"></span>
-                    <div class="burger__info-company info-company">
-                        <ul class="info-company__list">
-                            <li class="info-company__item info-company__item--burger"><a href="#"
-                                                                                         class="info-company__link link">our
-                                story</a></li>
-                            <li class="info-company__item info-company__item--burger"><a href="#"
-                                                                                         class="info-company__link link">services</a>
-                            </li>
-                            <li class="info-company__item info-company__item--burger"><a href="#"
-                                                                                         class="info-company__link link">faq</a>
-                            </li>
-                            <li class="info-company__item info-company__item--burger"><a href="#"
-                                                                                         class="info-company__link link">contact</a>
-                            </li>
-                        </ul>
+
+
+                    <div class="card">
+                        <img class="card__img" src="img/schema.png" alt="room">
+                        <div class="card__description">
+                            <div class="card__left">
+                                <div class="card__text">Количество комнат</div>
+                                <div class="card__text">Площадь</div>
+                                <div class="card__text">Цена</div>
+                            </div>
+                            <div class="card__right">
+                                <div class="card__text card__text--colored">1</div>
+                                <div class="card__text card__text--colored">36,69 м2</div>
+                                <div class="card__text card__text--colored">3 300 000 &#8381;</div>
+                            </div>
+                        </div>
                     </div>
-                    <a href="#" class="burger__btn btn btn--orange btn--wide">schedule appointment</a>
-                    <div class="burger__social social">
-                        <ul class="social__list wrapper wrapper--flex wrapper--center">
-                            <li class="social__item"><a href="#" class="social__link social__link--ph"><span
-                                    class="social__item-hidden">1</span></a></li>
-                            <li class="social__item"><a href="#" class="social__link social__link--insta"><span
-                                    class="social__item-hidden">2</span></a></li>
-                            <li class="social__item"><a href="#" class="social__link social__link--tw"><span
-                                    class="social__item-hidden">3</span></a></li>
-                            <li class="social__item"><a href="#" class="social__link social__link--fb"><span
-                                    class="social__item-hidden">4</span></a></li>
-                        </ul>
+
+                    <div class="card">
+                        <img class="card__img" src="img/schema.png" alt="room">
+                        <div class="card__description">
+                            <div class="card__left">
+                                <div class="card__text">Количество комнат</div>
+                                <div class="card__text">Площадь</div>
+                                <div class="card__text">Цена</div>
+                            </div>
+                            <div class="card__right">
+                                <div class="card__text card__text--colored">1</div>
+                                <div class="card__text card__text--colored">36,69 м2</div>
+                                <div class="card__text card__text--colored">3 300 000 &#8381;</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
-        <div class="container">
-            <div class="wrapper wrapper--flex">
-                <div class="logo">
-                    <a href="/" class="logo__link">
-                        <img src="img/logo--main.png" alt="main logo" class="logo__img">
-                    </a>
-                </div>
-                <div class="header__info-company info-company">
-                    <ul class="info-company__list wrapper wrapper--flex">
-                        <li class="info-company__item"><a href="#" class="info-company__link link">our story</a></li>
-                        <li class="info-company__item"><a href="#" class="info-company__link link">services</a></li>
-                        <li class="info-company__item"><a href="#" class="info-company__link link">faq</a></li>
-                        <li class="info-company__item"><a href="#" class="info-company__link link">contact</a></li>
-                    </ul>
-                </div>
-                <a href="tel:3034572040" class="header__tel link link--tel">(303) 457-2040</a>
-                <a href="#" class="header__btn btn btn--orange">schedule appointment</a>
-                <span data-btn="#burgerMobile" class="header__burger-btn btn btn--burger"></span>
-            </div>
-        </div>
+
+        <a href="#" class="btn btn__slider">Посмотреть все планировки Южного Берега</a>
+
     </div>
-
-    <div class="content">
-        <div class="container">
-            <div class="preview wrapper wrapper--flex">
-                <div class="preview__left">
-                    <h1 class="preview__title title title--major">Healthy Spine Family Chiropractic</h1>
-                    <p class="preview__text text">
-                        Healthy Spine Family Chiropractic was created for the necessity of custom made chiropractic
-                        treatment for all ages. We understand that not all bodies are the same.
-                    </p>
-                    <a href="" class="preview__btn btn btn--blue">get in touch now</a>
-                    <div class="preview__social social">
-                        <ul class="social__list wrapper wrapper--flex">
-                            <li class="social__item"><a href="#" class="social__link social__link--ph"><span
-                                    class="social__item-hidden">1</span></a></li>
-                            <li class="social__item"><a href="#" class="social__link social__link--insta"><span
-                                    class="social__item-hidden">2</span></a></li>
-                            <li class="social__item"><a href="#" class="social__link social__link--tw"><span
-                                    class="social__item-hidden">3</span></a></li>
-                            <li class="social__item"><a href="#" class="social__link social__link--fb"><span
-                                    class="social__item-hidden">4</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="preview__right">
-                    <img src="img/img__spine.png" alt="spine img" class="preview__img">
-                </div>
-            </div>
-
-            <div class="about-therapy wrapper wrapper--flex">
-                <div class="about-therapy__left">
-                    <img src="img/img__about-therapy.png" alt="about therapy" class="about-therapy__img">
-                </div>
-                <div class="about-therapy__right">
-                    <h2 class="about-therapy__title title">Comprehensive Pain Treatment</h2>
-                    <p class="about-therapy__text text">Healthy Spine Family Chiropractic was created for the necessity
-                        of custom made chiropractic treatment for all ages. We understand that not all bodies are the
-                        same and so your chiropractic treatment will be tailored to you. Healthy Spine Family
-                        Chiropractic was created for the necessity of custom made chiropractic treatment for all ages.
-                        We understand that not all bodies are the same and so your chiropractic treatment will be
-                        tailored to you. Healthy Spine Family Chiropractic was created for the necessity of custom made
-                        chiropractic treatment for all ages. We understand that not all bodies are the same and so your
-                        chiropractic treatment will be tailored to you.</p>
-                    <a href="" class="about-therapy__btn btn btn--orange">learn more</a>
-                </div>
-            </div>
-
-            <div class="services">
-                <div class="services__title title">Services</div>
-                <div class="wrapper wrapper--flex wrapper--wrap">
-                    <div class="services__left">
-                        <div class="services__box">
-                            <img src="img/img__services--ph-1.png" alt="service ph1" class="services__img">
-                            <div class="services__wrapper">
-                                <a href="#" class="services__link-hidden">Chiropractic</a>
-                                <div class="services__caption title title--lower">Chiropractic</div>
-                                <p class="services__text text text--size-s">Chiropractic care is a unique science that
-                                    focuses on restoring and maintaining health, while most other healing arts are
-                                    designed
-                                    to treat disease.</p>
-                                <ul class="services__list wrapper wrapper--flex wrapper--wrap">
-                                    <li class="services__item"><a href="#" class="services__link link link--tag">Chiropractic
-                                        Adjustment</a></li>
-                                    <li class="services__item"><a href="#"
-                                                                  class="services__link link link--tag">Flexion-distraction</a>
-                                    </li>
-                                    <li class="services__item"><a href="#"
-                                                                  class="services__link link link--tag">Thompson</a>
-                                    </li>
-                                    <li class="services__item"><a href="#" class="services__link link link--tag">View
-                                        All Services</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="services__box">
-                            <img src="img/img__services--ph-2.png" alt="service ph1" class="services__img">
-                            <div class="services__wrapper">
-                                <a href="#" class="services__link-hidden">Massage</a>
-                                <div class="services__caption title title--lower">Massage</div>
-                                <p class="services__text text text--size-s">Healthy Spine Family Chiropractic, serves
-                                    the Thornton and surrounding communities and it provides a natural, conservative
-                                    approach to your health care.</p>
-                                <ul class="services__list wrapper wrapper--flex wrapper--wrap">
-                                    <li class="services__item"><a href="#" class="services__link link link--tag">Deep
-                                        Tissue</a></li>
-                                    <li class="services__item"><a href="#"
-                                                                  class="services__link link link--tag">Trigger
-                                        Point</a>
-                                    </li>
-                                    <li class="services__item"><a href="#" class="services__link link link--tag">Sport
-                                        Massage</a></li>
-                                    <li class="services__item"><a href="#" class="services__link link link--tag">Myofascial
-                                        Release</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="services__right">
-                        <div class="services__box">
-                            <img src="img/img__services--ph-3.png" alt="service ph1" class="services__img">
-                            <div class="services__wrapper">
-                                <a href="#" class="services__link-hidden">Acupuncture</a>
-                                <div class="services__caption title title--lower">Acupuncture</div>
-                                <p class="services__text text text--size-s">Healthy Spine Family Chiropractic, serves
-                                    the Thornton and surrounding communities and it provides a natural, conservative
-                                    approach to your health care.</p>
-                                <ul class="services__list wrapper wrapper--flex wrapper--wrap">
-                                    <li class="services__item"><a href="#"
-                                                                  class="services__link link link--tag">Cupping</a></li>
-                                    <li class="services__item"><a href="#"
-                                                                  class="services__link link link--tag">Chinese
-                                        Herbs</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="advantages">
-                <h2 class="advantages__title title">Advantages</h2>
-                <p class="advantages__text text">Healthy Spine Family Chiropractic was created for the necessity of
-                    custom made chiropractic treatment for all ages.</p>
-                <div class="advantages__wrapper wrapper--flex wrapper--wrap">
-                    <div class="advantages__box advantages__box--like">
-                        <div class="advantages__caption title title--small">Multi Disciplinary Practice</div>
-                        <p class="advantages__description text text--size-s">We offer chiropractic, massage
-                            and acupuncture.</p>
-                    </div>
-                    <div class="advantages__box advantages__box--spanish-flag">
-                        <div class="advantages__caption title title--small">The Doctor Speaks Spanish</div>
-                        <p class="advantages__description text text--size-s">We strive to provide complete care for our
-                            patients. We speak English and Spanish.</p>
-                    </div>
-                    <div class="advantages__box advantages__box--award">
-                        <div class="advantages__caption title title--small">Over 10 Years of Experience</div>
-                        <p class="advantages__description text text--size-s">The Doctor has 10+ years of experience
-                            in the chiropractic.</p>
-                    </div>
-                    <div class="advantages__box advantages__box--shield">
-                        <div class="advantages__caption title title--small">Insurance</div>
-                        <p class="advantages__description text text--size-s">We accept most insurance and file
-                            the claims for you.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="doctor">
-                <div class="doctor__wrapper wrapper wrapper--flex">
-                    <div class="doctor__left">
-                        <img src="img/img__doctor--photo.png" alt="doctor img" class="doctor__img">
-                    </div>
-                    <div class="doctor__right">
-                        <h2 class="doctor__title title">Dr. Osvaldo «Ozzie» Gratacos</h2>
-                        <p class="doctor__text text">Dr. Osvaldo “Ozzie” Gratacos is a licensed chiropractor serving the
-                            Thornton and surrounding communities. Dr. Gratacos graduated from Palmer College of
-                            Chiropractic in Florida. After graduating, Dr. Gratacos went back to his home in Puerto Rico
-                            to open a practice for 4 years before practicing in Lakewood, Colorado. He is bilingual
-                            (spanish/english). Ozzie is certified in extremity adjustments, treatment in golf related
-                            injuries, and Cox technique for herniated disc.</p>
-                        <div class="doctor__wrapper-mobile">
-                            <p class="doctor__text-mobile text">
-                                Dr. Osvaldo “Ozzie” Gratacos is a licensed chiropractor serving the Thornton and surrounding communities.
-                            </p>
-                            <a href="#" class="doctor__link link link--tag">view more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonials">
-                <h2 class="testimonials__title title">Testimonials</h2>
-                <div class="testimonials__wrapper">
-                    <div class="testimonials__arrow-left"></div>
-                    <div class="testimonials__arrow-right"></div>
-                    <div class="testimonials__slider">
-                        <div class="testimonials__item">
-                            <div class="testimonials__rating rating">
-                                <img src="img/icon__testimonials--rating.png.png" class="rating__img"/>
-                            </div>
-                            <p class="testimonials__text text text--size-s">I first visited Dr Ozzie after a sports
-                                injury
-                                took me out of the game. Dr. Gratacos helped me – not just by relieving my pain, but by
-                                showing me how to avoid future injuries. Now I know what not to do so I can keep...</p>
-                            <a href="#" class="testimonials__link link link--tag">view more</a>
-                            <div class="testimonials__author">Tony D. 1</div>
-                        </div>
-                        <div class="testimonials__item">
-                            <div class="testimonials__rating rating">
-                                <img src="img/icon__testimonials--rating.png.png" class="rating__img"/>
-                            </div>
-                            <p class="testimonials__text text text--size-s">I first visited Dr Ozzie after a sports
-                                injury
-                                took me out of the game. Dr. Gratacos helped me – not just by relieving my pain, but by
-                                showing me how to avoid future injuries. Now I know what not to do so I can keep...</p>
-                            <a href="#" class="testimonials__link link link--tag">view more</a>
-                            <div class="testimonials__author">Tony D. 2</div>
-                        </div>
-                        <div class="testimonials__item">
-                            <div class="testimonials__rating rating">
-                                <img src="img/icon__testimonials--rating.png.png" class="rating__img"/>
-                            </div>
-                            <p class="testimonials__text text text--size-s">I first visited Dr Ozzie after a sports
-                                injury
-                                took me out of the game. Dr. Gratacos helped me – not just by relieving my pain, but by
-                                showing me how to avoid future injuries. Now I know what not to do so I can keep...</p>
-                            <a href="#" class="testimonials__link link link--tag">view more</a>
-                            <div class="testimonials__author">Tony D. 3</div>
-                        </div>
-                        <div class="testimonials__item">
-                            <div class="testimonials__rating rating">
-                                <img src="img/icon__testimonials--rating.png.png" class="rating__img"/>
-                            </div>
-                            <p class="testimonials__text text text--size-s">I first visited Dr Ozzie after a sports
-                                injury
-                                took me out of the game. Dr. Gratacos helped me – not just by relieving my pain, but by
-                                showing me how to avoid future injuries. Now I know what not to do so I can keep...</p>
-                            <a href="#" class="testimonials__link link link--tag">view more</a>
-                            <div class="testimonials__author">Tony D. 4</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact">
-                <div class="contact__wrapper">
-                    <h2 class="contact__title title title--major">Contact Us Today</h2>
-                    <p class="contact__text text">We are happy to assist you with any questions you may have regarding
-                        your chiropractic needs or insurance questions. You can make an appointment online or by giving
-                        us a call at</p>
-                    <a href="" class="contact__tel link link--tel link--tel-upper">(303) 457-2040</a>
-                    <a href="" class="contact__btn btn btn--blue">Make an Appointment</a>
-                    <a href="" class="contact__btn--map-mobile btn btn--orange">Get Direction</a>
-                </div>
-                <div class="contact__map" id="ya-map">
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="container">
-            <div class="footer__top wrapper wrapper--flex wrapper--align-center">
-                <div class="footer__info-company info-company">
-                    <ul class="info-company__list wrapper wrapper--flex">
-                        <li class="info-company__item"><a href="#" class="info-company__link link link--small">our story</a></li>
-                        <li class="info-company__item"><a href="#" class="info-company__link link link--small">services</a></li>
-                        <li class="info-company__item"><a href="#" class="info-company__link link link--small">faq</a></li>
-                        <li class="info-company__item"><a href="#" class="info-company__link link link--small">contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer__social social">
-                    <ul class="social__list wrapper wrapper--flex">
-                        <li class="social__item"><a href="#" class="social__link social__link--ph"><span
-                                class="social__item-hidden">1</span></a></li>
-                        <li class="social__item"><a href="#" class="social__link social__link--insta"><span
-                                class="social__item-hidden">2</span></a></li>
-                        <li class="social__item"><a href="#" class="social__link social__link--tw"><span
-                                class="social__item-hidden">3</span></a></li>
-                        <li class="social__item"><a href="#" class="social__link social__link--fb"><span
-                                class="social__item-hidden">4</span></a></li>
-                    </ul>
-                </div>
-                <a href="#" class="footer__btn btn btn--orange">Contact Us</a>
-            </div>
-
-            <div class="footer__bottom wrapper wrapper--flex">
-                <div class="footer__left">
-                    <a href="tel:3034572040" class="footer__tel link link--tel link--tel-lower">(303) 457-2040</a>
-                    <p class="footer__text">10313 Washington St., Thornton,</p>
-                    <p class="footer__text">CO 80229</p>
-                </div>
-                <div class="footer__center">
-                    <p class="footer__text">Monday, Wednesday, Thursday — 9:00 AM - 6:00 PM</p>
-                    <p class="footer__text">Friday — 9:00 AM - 1:00 PM</p>
-                    <p class="footer__text">Saturday — 10:00 AM - 1:00 PM</p>
-                </div>
-                <div class="footer__right">
-                    <div class="footer__right-wrapper wrapper wrapper--flex wrapper--align-center wrapper--end">
-                        <p class="footer__text">Company rating:</p><img class="footer__img-rating"
-                                                                        src="img/icon__testimonials--rating.png.png"
-                                                                        alt="rating"/>
-                    </div>
-                    <p class="footer__text">© Copyright — Healthy Spine Family<br class="br-is-tables"> Chiropractic 2019</p>
-                    <p class="footer__text">Web Design — Direct Line Development</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/libs.min.js"></script>
-<script src="js/common-js.js"></script>
 <script src="js/common-jq.js"></script>
+
 </body>
 </html>

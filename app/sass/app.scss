@@ -9,33 +9,17 @@
 
 // Site
 
-@import 'site/slick'; // <-- Slider https://kenwheeler.github.io/slick/
-@import 'site/slick-theme'; // <-- Slider https://kenwheeler.github.io/slick/
+//@import 'site/slick'; // <-- Slider https://kenwheeler.github.io/slick/
+//@import 'site/slick-theme'; // <-- Slider https://kenwheeler.github.io/slick/
 
 @import 'site/normalizer'; // <-- Normalizer Lib || https://necolas.github.io/normalize.css/
 @import 'site/fonts'; // <-- Fonts of project || https://fonts.google.com/
 
-@import 'site/text';
-@import 'site/title';
-
 @import 'site/basic';
-@import 'site/about-therapy';
-@import 'site/advantages';
 @import 'site/body-wrapper';
 @import 'site/btn';
-@import 'site/burger';
-@import 'site/contact';
+@import 'site/card';
 @import 'site/container';
-@import 'site/content';
-@import 'site/doctor';
-@import 'site/footer';
-@import 'site/header';
-@import 'site/info-company';
-@import 'site/link';
-@import 'site/logo';
-@import 'site/preview';
-@import 'site/rating';
-@import 'site/services';
-@import 'site/social';
-@import 'site/testimonials';
+@import 'site/title';
+@import 'site/slider';
 @import 'site/wrapper';

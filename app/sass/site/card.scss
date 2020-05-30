@@ -1,0 +1,31 @@
+.card {
+  text-decoration: none;
+
+  &__description {
+    display: flex;
+  }
+
+  &__left {
+    margin-right: 57px;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: $fontSizeS;
+    line-height: 20px;
+    color: $colorBlack;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--colored {
+      color: $colorOrange;
+      font-weight: bold;
+    }
+  }
+}
