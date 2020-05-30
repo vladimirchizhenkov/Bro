@@ -23,6 +23,11 @@
       margin-bottom: 0;
     }
 
+    &--sup {
+      vertical-align: super;
+      font-size: 8px;
+    }
+
     &--color-orange, &--color-green, &--color-red, &--color-violet, &--color-brown, &--color-blue, &--color-yellow {
       font-weight: bold;
     }
