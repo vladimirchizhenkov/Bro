@@ -3,8 +3,6 @@
     display: flex;
     justify-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    margin-bottom: 24px;
   }
 
   &__tabs {
@@ -133,6 +131,16 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
       }
     }
+  }
+
+  &__hr {
+    width: 100%;
+    height: 1px;
+    background-color: $colorGrey;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 24px;
+    top: -1px;
   }
 
   &__item {
